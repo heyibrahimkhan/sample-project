@@ -1,5 +1,5 @@
+from os import path
 import argparse
-import requests
 from helpers import utils
 
 
