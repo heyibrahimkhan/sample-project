@@ -1,4 +1,4 @@
-from os import path
+import os
 import argparse
 from helpers import utils
 
@@ -24,7 +24,7 @@ def setup_args():
 
 def initialize_g_vars():
     global logger, args
-    logger = setup_logger()
+    logger = utils.setup_logger()
     args = setup_args()
     if args.verbosity is not None and not args.verbosity: logger.setLevel(args.verbosity)
     logger.info('initialize_g_vars() finished successfully...')
