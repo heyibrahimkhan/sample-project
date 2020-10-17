@@ -29,6 +29,7 @@ def initialize_g_vars():
     if args.verbosity is not None and not args.verbosity: logger.setLevel(args.verbosity)
     logger.info('initialize_g_vars() finished successfully...')
 
+    
 def main():
     try:
         initialize_g_vars()
