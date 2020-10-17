@@ -18,6 +18,7 @@ def empty_output_file(output='.output'):
 def setup_args():
     parser = argparse.ArgumentParser(os.path.basename(__file__))
     parser.add_argument('-v', '--verbosity', metavar='<verbosity_level>', type=str, default='DEBUG', help='Execution verbosity level. Eg: SUCCESS|WARN|INFO|DEBUG.')
+    parser.add_argument('-o', '--output', metavar='<output_file>', type=str, default='.output', help='Output file name. Eg: .output. Default is .output.')
     logger.info('Arguments parsed successfully...')
     return parser.parse_args()
 
